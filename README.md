@@ -1,2 +1,9 @@
-# ag1
-Unofficial learning material for BI-AG1 course on FIT CTU
+### [Skripta](https://skripta.ag1.monster)
+
+---
+
+### Contribution
+
+1. Fork
+2. Make changes
+3. Make PR
