@@ -1,4 +1,4 @@
-## You can report any issues [here](https://github.com/truepeak78/ag1/issues/new)
+## You can report any issues [**here**](https://github.com/truepeak78/ag1/issues/new)
 
 ---
 
