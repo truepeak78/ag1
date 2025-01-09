@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: BI-AG1
-site_url: https://192.168.0.1/notes
+site_url: https://skripta.ag1.monster
+repo_name: truepeak78/ag1
+repo_url: https://github.com/truepeak78/ag1
 theme:
     name: material
     features:
@@ -8,6 +10,7 @@ theme:
         - navigation.footer
         - navigation.indexes
     icon:
+        repo: fontawesome/brands/github
         admonition:
             note: material/alert
     logo:
@@ -62,3 +65,8 @@ extra_javascript:
 
 plugins:
     - search
+
+extra:
+    social:
+          - icon: fontawesome/brands/github
+            link: https://github.com/truepeak78/ag1
