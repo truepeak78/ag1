@@ -1,4 +1,4 @@
-### [Skripta](https://skripta.ag1.monster)
+### [Skripta](https://truepeak78.github.io/ag1)
 
 ---
 
