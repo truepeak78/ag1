@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-inner-padding: 16px;
+
+    --white: #ffffff;
+    --background: #212529;
+    --implication: #ffc107;
+    --theorem: #03caf0;
+    --definition: #198753;
+    --warning: #dc3545;
+    --algorithm: #ec4899;
+    --algorithmmini: #ec4899;
+    --proof: #0d6efd;
+    --text-color: #adb5bd;
+}
+
+
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: var(--background);
+    --md-admonition-fg-color: var(--text-color);
+}
+
+[data-md-color-scheme="slate"] h1 {
+    --md-default-fg-color--light: var(--white);
+}
+
+.mjx-math {
+    font-family: "Times New Roman", Times, "Nimbus Roman No9 L", serif;
+}
+
+h1 {
+    font-size: 24px !important;
+    font-family: "Noto Serif", serif !important;
+    font-weight: 500 !important;
+}
+
+h2 {
+    font-size: 20px !important;
+    font-family: "Noto Serif", serif !important;
+    font-weight: 400 !important;
+}
+
+p {
+    font-family: "Noto Serif", serif;
+    font-size: 16px;
+}
+
+.md-content {
+    font-family: "Noto Serif", serif;
+
+    & > *:not(h1, h2, h3, h4, h5, h6) {
+        font-size: 16px !important;
+    }
+
+    :is(ul,ol) {
+        margin-left: 0 !important;
+    }
+}
+
+.md-content__inner {
+    margin-bottom: 64px !important;
+}
+
+.admonition > :is(h2, h3, h4, h5, h6) {
+    display: none;
+}
+
+.admonition {
+    font-family: "Noto Serif", serif;
+    font-size: 16px !important;
+    padding-inline: var(--card-inner-padding) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: calc(6px + 1px) !important;
+}
+
+.admonition > p:not(.admonition-title):last-of-type {
+    margin-bottom: var(--card-inner-padding) !important;
+}
+
+.admonition-title {
+    margin-inline: calc(var(--card-inner-padding) * -1) !important;
+    padding: 8px 16px !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    color: var(--white) !important;
+    margin-bottom: var(--card-inner-padding) !important;
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+
+    &::before {
+        display: none
+    }
+
+    &::after {
+        font-family: "Font Awesome 6 Free", serif;
+        font-weight: 900;
+        position: absolute;
+        right: var(--card-inner-padding);
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--white) !important;
+    }
+}
+
+.warning > .admonition-title {
+    background: var(--warning) !important;
+
+    &::after {
+        content: '\f06a';
+    }
+}
+
+.implication > .admonition-title {
+    background: var(--implication) !important;
+
+    &::after {
+        content: '\f005';
+    }
+}
+
+.definition > .admonition-title {
+    background: var(--definition) !important;
+
+    &::after {
+        content: '\f13d';
+    }
+}
+
+.theorem > .admonition-title {
+    background: var(--theorem) !important;
+
+    &::after {
+        content: '\f135';
+    }
+}
+
+.algorithm > .admonition-title {
+    background: var(--algorithm) !important;
+
+    &::after {
+        content: '\f013';
+    }
+}
+
+.algorithmmini > .admonition-title {
+    background: var(--algorithm) !important;
+    font-size: 16px !important;
+}
+
+.proof {
+    border: 1px solid var(--proof) !important;
+    padding-inline: var(--card-inner-padding) !important;
+    border-radius: 6px !important;
+
+    &[open] > summary::after {
+        transform: translateY(-50%) rotate(90deg) !important;
+    }
+
+    & > *:not(summary) {
+        font-family: "Noto Serif", serif;
+        font-size: 16px !important;
+    }
+
+    & > :not(summary):first-of-type {
+        margin-top: var(--card-inner-padding) !important;
+    }
+
+    & > *:not(summary):last-child {
+        margin-bottom: var(--card-inner-padding) !important;
+    }
+}
+
+.proof > summary {
+    margin-inline: calc(var(--card-inner-padding) * -1) !important;
+    padding: 8px 16px !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    color: var(--proof) !important;
+    font-family: "Noto Serif", serif;
+    background-color: transparent !important;
+
+    &::before {
+        display: none !important;
+    }
+
+    &::after {
+        content: '\f013' !important;
+        position: absolute !important;
+        right: var(--card-inner-padding) !important;
+        top: 50% !important;
+        transform: translateY(-50%) rotate(0deg) !important;
+    }
+}
