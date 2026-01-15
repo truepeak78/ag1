@@ -201,3 +201,16 @@ p {
         transform: translateY(-50%) rotate(0deg) !important;
     }
 }
+
+.admonition p > a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.admonition p > a::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: " \f0c1";
+    font-size: 0.8em;
+    padding-left: 4px;
+}
