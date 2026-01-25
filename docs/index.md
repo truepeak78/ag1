@@ -16,6 +16,6 @@
 
 ---
 
-### Contributors
+### [Contributors](https://github.com/truepeak78/ag1/graphs/contributors)
 
-#### [Truepeak](https://discordapp.com/users/) et. al.
+> Díky všem kolegům, kteří se podíleli na vývoji skript.
