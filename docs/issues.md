@@ -1,3 +1,16 @@
+> Since I don't have that much time to actively resolve issues, the preferable solution is creating a pull request with your own fix
+
+## Creating a Pull request
+
+You can also fix the issue yourself with a pull request
+
+1. Create a fork of the repository
+2. Fix the issue in your fork
+    - please try to prefix all your commits with `fix: (commit message)` 
+4. Request merge to `main` branch of `truepeak78/ag1`
+
+---
+
 ## You can report any issues [**here**](https://github.com/truepeak78/ag1/issues/new)
 
 ---
@@ -9,12 +22,3 @@
 3. Create the issue
 
 ---
-
-### Creating a Pull request
-
-You can also fix the issue yourself with a pull request
-
-1. Create a fork of the repository
-2. Fix the issue in your fork
-    - please try to prefix all your commits with `fix: (commit message)` 
-4. Request merge to `main` branch of `truepeak78/ag1`
